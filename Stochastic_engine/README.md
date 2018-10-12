@@ -81,14 +81,21 @@ PNW_hydro/FCRPS/res_specs3.xlsx <br/>
 **Output files:** <br/>
 PNW_hydro/FCRPS/Modeled_BPA_dams.xlsx <br/>
 
+
 <img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme3.png" alt="alt text" width="570" height="280">
 
 ## windspeed2_windpower.py
-This file simulates aggregate hourly wind power production for the Pacific Northwest zone and the CAISO zones using a regression to predict total daily wind power production as a function of wind speeds, and conditional resampling to acquire hourly wind power production profiles for each day. Note that the user needs to specificy a level of installed wind power capcacity for each region (PNW_cap = X; CAISO_cap = X).
+This file simulates aggregate hourly wind power production for the Pacific Northwest zone and the CAISO zones using a regression to predict total daily wind power production as a function of wind speeds, and conditional resampling to acquire hourly wind power production profiles for each day. Note that the user needs to specificy a level of installed wind power capcacity for each region (**PNW_cap = X; CAISO_cap = X**).
 
 **Input files required:**<br/>
+Synthetic_wind_power/renewables_2011_2017.xlsx<br/>
+Synthetic_wind_power/cap_by_month.xlsx<br/>
+Synthetic_wind_power/power_speed_daily.xlsx<br/>
+Synthetic_wind_power/calender.xlsx<br/>
+Synthetic_weather/synthetic_weather_data.csv<br/>
+
 
 **Output files:** <br/>
-
+Synthetic_wind_power/wind_power_sim.csv<br/>
 
 
