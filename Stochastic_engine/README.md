@@ -62,8 +62,21 @@ CA_hydropower/A1.0_FNF_Storage_Rule_Caribou_2 <br/>
 Synthetic_streamflows/synthetic_streamflows_CA.csv <br/>
 
 **Output files:** <br/>
-Synthetic_streamflows/synthetic_streamflows_FCRPS.csv <br/>
-Synthetic_streamflows/synthetic_streamflows_TDA.csv <br/>
-Synthetic_streamflows/synthetic_discharge_Hoover.csv <br/>
-Synthetic_streamflows/synthetic_streamflows_CA.csv <br/>
-Synthetic_streamflows/synthetic_streamflows_Willamette.csv <br/>
+CA_hydropower/CA_hydro_daily.xlsx <br/>
+
+## Run_Matlab_Script.py
+This file accesses and runs the HYSSR model for the Federal Columbia River Power System in the Pacific Northwest. It is a mass balance hydrologic model that makes decisions on a daily basis about reservoir storage and release (hydropower production) based on existing "rule curves" stipulated by the U.S. Army Corps of Engineers and the Bureau of Reclamation. The primary inputs are synthetic streamflows at stream gages throughout the Columbia River Basin, and the outputs are daily amounts of available hydropower production for the BPA system. 
+
+**Input files required:** <br/>
+CA_hydropower/sites.xlsx <br/>
+FCRPS.m <br/>
+ICF_calc_new.m <br/>
+PNW_hydro/FCRPS/BPA_simulation_coefficients.xlsx <br/>
+PNW_hydro/FCRPS/daily_streamflows.xlsx <br/>
+PNW_hydro/FCRPS/ORC.xlsx <br/>
+PNW_hydro/FCRPS/res_specs.xlsx <br/>
+PNW_hydro/FCRPS/res_specs2.xlsx <br/>
+PNW_hydro/FCRPS/res_specs3.xlsx <br/>
+
+**Output files:** <br/>
+PNW_hydro/FCRPS/Modeled_BPA_dams.xlsx <br/>
