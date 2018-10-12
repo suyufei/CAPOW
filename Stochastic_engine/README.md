@@ -49,13 +49,17 @@ Synthetic_streamflows/synthetic_streamflows_Willamette.csv <br/>
 This file predicts aggregated daily hydropower production for two zones in the CAISO system (PG&E Valley and Southern California Edison). The primary inputs to this simulation are synthetic streamflows. No mass balance hydrologic models are available for most dams in these zones, so simple rule based prediction models were parameterized via a differential evolution algorithm. 
 
 **Input files required:** <br/>
-Synthetic_streamflows/hist_temps_1953_2007.xlsx <br/>
-Synthetic_streamflows/BPA_hist_streamflow.xlsx <br/>
-Synthetic_streamflows/Hoover_hist_streamflow.csv <br/>
-Synthetic_streamflows/CA_hist_streamflow.xlsx <br/>
-Synthetic_streamflows/Willamette_hist_streamflow.csv <br/>
-Synthetic_streamflows/city_weights.xlsx <br/>
-Synthetic_weather/synthetic_weather_data.csv <br/>
+CA_hydropower/sites.xlsx <br/>
+CA_hydropower/upper.xlsx <br/>
+CA_hydropower/calender.xlsx <br/>
+CA_hydropower/hist_reservoir_inflows.xlsx <br/>
+CA_hydropower/PGE_DE_V1
+CA_hydropower/SCE_DE_V1
+CA_hydropower/A1.0_FNF_Storage_Rule_Belden
+CA_hydropower/A1.0_FNF_Storage_Rule_Butt_Valley
+CA_hydropower/A1.0_FNF_Storage_Rule_Caribou_1
+CA_hydropower/A1.0_FNF_Storage_Rule_Caribou_2
+Synthetic_streamflows/synthetic_streamflows_CA.csv <br/>
 
 **Output files:** <br/>
 Synthetic_streamflows/synthetic_streamflows_FCRPS.csv <br/>
