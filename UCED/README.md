@@ -41,3 +41,35 @@ PNW/solar_out.csv<br/>
 PNW/wind_out.csv<br/>
 PNW/switch.csv<br/>
 PNW/srsv.csv<br/>
+
+## CA_price_calculation
+Wholesale electricity prices for each zone are estimated as the marginalcost ($/MWh) of the most expensive unit online in each hour. These (somewhat crude) LMP estimates are then combined in a regression to predict prices for the CAISO market. 
+
+**Input files required:** <br/>
+CAISO/mwh_1.csv<br/>
+CAISO/mwh_2.csv<br/>
+CAISO/mwh_3.csv<br/>
+CAISO/prices_2010_2011.csv<br/>
+../Model_setup/CA_data_file/generators.csv<br/>
+
+**Output files:** <br/>
+CAISO/sim_hourly_prices.xlsx<br/>
+CAISO/sim_daily_prices.xlsx<br/>
+CAISO/weighted_daily_prices.xlsx<br/>
+CAISO/weighted_hourly_prices.xlsx<br/>
+
+## PNW_price_calculation
+Wholesale electricity prices for each zone are estimated as the marginalcost ($/MWh) of the most expensive unit online in each hour. 
+
+**Input files required:** <br/>
+PNW/mwh_1.csv<br/>
+PNW/mwh_2.csv<br/>
+PNW/mwh_3.csv<br/>
+PNW/prices_2010_2011.csv<br/>
+../Model_setup/PNW_data_file/generators.csv<br/>
+
+**Output files:** <br/>
+PNW/sim_hourly_prices.xlsx<br/>
+PNW/sim_daily_prices.xlsx<br/>
+PNW/weighted_daily_prices.xlsx<br/>
+PNW/weighted_hourly_prices.xlsx
