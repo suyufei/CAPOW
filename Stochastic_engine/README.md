@@ -26,3 +26,20 @@ Synthetic_Weather/synthetic_weather_data.csv
 
 ## synthetic_streamflows.py
 This file
+
+**Input files required:** <br/>
+Synthetic_streamflows/hist_temps_1953_2007.xlsx <br/>
+Synthetic_streamflows/BPA_hist_streamflow.xlsx <br/>
+Synthetic_streamflows/Hoover_hist_streamflow.csv <br/>
+Synthetic_streamflows/CA_hist_streamflow.xlsx <br/>
+Synthetic_streamflows/Willamette_hist_streamflow.csv <br/>
+Synthetic_streamflows/city_weights.xlsx <br/>
+Synthetic_weather/synthetic_weather_data.csv <br/>
+
+**Output files:** <br/>
+Synthetic_streamflows/synthetic_streamflows_FCRPS.csv <br/>
+Synthetic_streamflows/synthetic_streamflows_TDA.csv <br/>
+Synthetic_streamflows/synthetic_discharge_Hoover.csv <br/>
+Synthetic_streamflows/synthetic_streamflows_CA.csv <br/>
+Synthetic_streamflows/synthetic_streamflows_Willamette.csv <br/>
+
