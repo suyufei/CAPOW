@@ -23,6 +23,6 @@ There are three main parts of the CAPOW model. Each is associated with a separat
 
 **3. UCED** - (_**simulation.py**_) simulates the operation of the CAISO and Mid-C markets, calculates hourly and daily electricity prices. 
 
-The file structure presented on Github is meant to be downloaded as a single compressed zip file, extracted and run by executing the three .py files described above in sequence. README files in each of the three major repositories details the function of each related .py script, as well as associated input and output data. 
+The file structure presented on Github is meant to be downloaded as a single compressed zip file, extracted and run by executing the three .py files described above in sequence. **README files in each of the three main sub-repositories** details the function of each related .py script, as well as associated input and output data. 
 
 As publications become available that demonstrate the application the CAPOW model in different contexts, those papers, as well as additional code and data, will also be made available here. 
