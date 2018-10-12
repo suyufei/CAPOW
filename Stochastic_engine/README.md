@@ -8,7 +8,7 @@ This is the primary file that executes every other script. At the top of the fil
 
 Near the top of the file, the user must specify a certain number of years worth of stochastic inputs to create (**sim_years = X**). Note that regardless of the number selected, the CAPOW default is to push only a single synthetic year through the UC/ED model.
 
-<img src="https://github.com/romulus97/CAPOW/blob/master/Wiki_images/readme1.png" alt="alt text" width="500" height="300">
+<img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme1.png" alt="alt text" width="500" height="300">
 
 Immediately below, stochastic_engine passes the user specified number of stochastic years to the synthetic_temps_wind file and its function synthetic_temps_wind.sythetic().
 
