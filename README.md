@@ -2,7 +2,8 @@
 ## Welcome to the CAPOW readme file
 This readme serves as the general support document for the **California and West Coast Power System (CAPOW)** model. CAPOW is primarily Python based (a few Matlab scripts are included; these are executed in Python). The model was built to simulate the operations of the major markets comprising the West Coast bulk electric power system: the **Mid-Columbia (Mid-C)** market, and the **California Independent System Operator (CAISO)**. 
 
-![](https://github.com/romulus97/CAPOW/blob/master/Wiki_images/figure1.png)
+
+<img src="https://github.com/romulus97/CAPOW/blob/master/Images/figure1.png" alt="alt text" width="400" height= "300">
 
 System dynamics are driven entirely by time series of spatially distributed meteorological (temperatures, wind speeds) and hydrologic (streamflows) variables. These natural system inputs are converted to relevant power system inputs (hourly electricity demand, solar power production and wind power production, daily hydropower production). Power system inputs then drive a **unit commitment/economic dispatch (UC/ED)** simulation model, which minimizes the cost of meeting system-wide electricity demand, given an existing generation portfolio. The default model formulation presented here simulates the Mid-C and CAISO markets using two separate objective functions, and power flows between these two systems (i.e, between the Pacific Northwest and California) are modeled statistically. However, this default formulation can (and in some cases should) be altered to consider both systems as a single objective function, and make predictions of power flows between these systems a model output.
 
@@ -10,7 +11,8 @@ The primary outputs of CAPOW are hourly records of power production at the rough
 
 The figures below illustrate the spatial extent and resolution of the CAPOW model. The CAISO system is divided into 4 zones, which cover the operations of three major utilities in the state. Exchanges of electricity (imports/exports) between the zones of the core UC/ED model and other zones in the larger **Western Electricity Coordinating Council (WECC)** footprint are modeled statistically. 
 
-![](https://github.com/romulus97/CAPOW/blob/master/Wiki_images/wiki_2.png)
+<img src="https://github.com/romulus97/CAPOW/blob/master/Images/wiki_2.png" alt="alt text" width="400" height= "300">
+
 
 ## File structure, README files, and publications
 There are three main parts of the CAPOW model:
