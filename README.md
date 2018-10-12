@@ -11,7 +11,7 @@ The primary outputs of CAPOW are hourly records of power production at the rough
 
 The figures below illustrate the spatial extent and resolution of the CAPOW model. The CAISO system is divided into 4 zones, which cover the operations of three major utilities in the state. Exchanges of electricity (imports/exports) between the zones of the core UC/ED model and other zones in the larger **Western Electricity Coordinating Council (WECC)** footprint are modeled statistically. 
 
-<img src="https://github.com/romulus97/CAPOW/blob/master/Images/wiki_2.png" alt="alt text" width="480" height= "300">
+<img src="https://github.com/romulus97/CAPOW/blob/master/Images/wiki_2.png" alt="alt text" width="528" height= "330">
 
 
 ## File structure, README files, and publications
