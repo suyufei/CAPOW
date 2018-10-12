@@ -85,3 +85,23 @@ Path_setup/CA_exports.csv<br/>
 Path_setup/CA_path_mins.csv<br/>
 
 **Output files:** 
+data.dat <br/>
+
+## PNW_data_setup.py
+This file populates the data.dat file needed to run the PNW/Mid-C UC/ED model. 
+
+**Input files required:** <br/>
+PNW_data_file/generators.csv<br/>
+PNW_data_file/reserves.csv<br/>
+PNW_data_file/must_run.xlsx<br/>
+../Stochastic_engine/Synthetic_demand_pathflows/Sim_hourly_load.xlsx<br/>
+../Stochastic_engine/Synthetic_wind_power/wind_power_sim.csv<br/>
+../Stochastic_engine/Gas_prices/NG.xlsx<br/>
+Hydro_setup/PNW_dispatchable_hydro.csv<br/>
+Hydro_setup/PNW_hydro_mins.csv<br/>
+Path_setup/PNW_dispatchable_imports.csv<br/>
+Path_setup/PNW_exports.csv<br/>
+Path_setup/PNW_path_mins.csv<br/>
+
+**Output files:** 
+data.dat <br/>
