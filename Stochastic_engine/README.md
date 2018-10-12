@@ -107,7 +107,7 @@ Synthetic_wind_power/cap_by_month.xlsx<br/>
 **Output files:** <br/>
 Synthetic_solar_power/solar_power_sim.xlsx <br/>
 
-<img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme4.png" alt="alt text" width="420" height="280">
+<img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme4.png" alt="alt text" width="462" height="308">
 
 ## demand_pathflows.py
 
