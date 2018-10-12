@@ -23,4 +23,4 @@ Hydro_setup/SCE_hydro_2011.xlsx <br/>
 **Output files:** <br/>
 Hydro_setup/Minimum_hydro.xlsx <br/>
 
-<img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme6.png" alt="alt text" width="530" height="300">
+<img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme6.png" alt="alt text" width="530" height="270">
