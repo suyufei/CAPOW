@@ -43,7 +43,7 @@ Synthetic_streamflows/synthetic_discharge_Hoover.csv <br/>
 Synthetic_streamflows/synthetic_streamflows_CA.csv <br/>
 Synthetic_streamflows/synthetic_streamflows_Willamette.csv <br/>
 
-<img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme2.png" alt="alt text" width="570" height="300">
+<img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme2.png" alt="alt text" width="570" height="280">
 
 ## CA_hydropower.py
 This file predicts aggregated daily hydropower production for two zones in the CAISO system (PG&E Valley and Southern California Edison). The primary inputs to this simulation are synthetic streamflows. No mass balance hydrologic models are available for most dams in these zones, so simple rule based prediction models were parameterized via a differential evolution algorithm. 
