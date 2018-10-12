@@ -4,7 +4,7 @@ The primary engine that drives CAPOW system dynamics is the stochastic modeling 
 These synthetic weather and streamflow data are then pushed through a suite of models that convert them to relevant power system inputs (hourly electricity demand, hourly solar power production, hourly wind power production, daily hydropower availability, and daily power flows between the core UC/ED zones and other zones in the WECC footprint).
 
 ## stochastic_engine.py
-This is the primary file that executes every other script. At the top of the file is a section that performs a statistical analysis of historical meterological data. This only needs to be executed a single time, the first time CAPOW is used. The resultant data files are included as part of the CAPOW package, so the default is for this script to be commented out. 
+This is the primary file that executes every other stochastic modeling script. At the top of the file is a section that performs a statistical analysis of historical meterological data. This only needs to be executed a single time, the first time CAPOW is used. The resultant data files are included as part of the CAPOW package, so the default is for this script to be commented out. 
 
 Near the top of the file, the user must specify a certain number of years worth of stochastic inputs to create (**sim_years = X**). Note that regardless of the number selected, the CAPOW default is to push only a single synthetic year through the UC/ED model.
 
@@ -13,9 +13,16 @@ Near the top of the file, the user must specify a certain number of years worth 
 Immediately below, stochastic_engine passes the user specified number of stochastic years to the synthetic_temps_wind file and its function synthetic_temps_wind.sythetic().
 
 ## synthetic_temps_wind.py
-This file uses outputs from the statistical analysis of historical meteorological data to  
+This file takes its inputs from the statistical analysis of historical meteorological data (daily average profiles of wind and temperature, records of deviations (residuals) from those profiles, and a covariance matrix of "whitended" (de-seasoned) residuals across all meteorological fields and locations. Using these data, it fits a vector autoregressive (VAR) model to whitened meteorological residuals, re-seasons them and adds that data to the daily average profiles to arrive at synthetic daily weather data at each station represented.
 
 **Input files required:**
 Historical_weather_analysis/WIND_TEMP_res.csv
+Historical_weather_analysis/Covariance_Calculation.csv
+Historical_weather_analysis/WIND_TEMP_ave.csv
+Historical_weather_analysis/WIND_TEMP_std.csv
 
 **Output files:**
+Synthetic_Weather/synthetic_weather_data.csv
+
+## synthetic_streamflows.py
+This file
