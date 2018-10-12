@@ -32,15 +32,14 @@ This file calculates "minimum flows" for zonal hydropower production and imports
 ../Stochastic_engine/Synthetic_demand_pathflows/Load_Path_Sim.csv <br/>
 ../Stochastic_engine/CA_hydropower/CA_hydro_daily.xlsx <br/>
 Hydro_setup/Minimum_hydro_profiles.xlsx <br/>
-Path_setup/CA_imports.csv <br/>
 Path_setup/CA_imports_minflow_profiles.xlsx <br/>
-Path_setup/CA_dispatchable_imports.csv <br/>
-Path_setup/CA_imports.csv <br/>
-Path_setup/CA_path_mins.csv <br/>
 Path_setup/CA_path_export_profiles.xlsx <br/>
 
 **Output files:** <br/>
 Path_setup/CA_exports.csv <br/>
+Path_setup/CA_dispatchable_imports.csv <br/>
+Path_setup/CA_imports.csv <br/>
+Path_setup/CA_path_mins.csv <br/>
 Hydro_setup/CA_dispatchable_hydro.csv <br/>
 Hydro_setup/CA_hydro_mins.csv <br/>
 
@@ -49,16 +48,15 @@ This file calculates "minimum flows" for zonal hydropower production and imports
 
 **Input files required:** <br/>
 ../Stochastic_engine/Synthetic_demand_pathflows/Load_Path_Sim.csv <br/>
-../Stochastic_engine/PNW_hydropower/PNW_hydro_daily.xlsx <br/>
+../Stochastic_engine/PNW_hydro/PNW_hydro_daily.xlsx <br/>
 Hydro_setup/Minimum_hydro_profiles.xlsx <br/>
-Path_setup/CA_imports.csv <br/>
-Path_setup/CA_imports_minflow_profiles.xlsx <br/>
-Path_setup/CA_dispatchable_imports.csv <br/>
-Path_setup/CA_imports.csv <br/>
-Path_setup/CA_path_mins.csv <br/>
-Path_setup/CA_path_export_profiles.xlsx <br/>
+Path_setup/PNW_imports_minflow_profiles.xlsx <br/>
+Path_setup/PNW_path_export_profiles.xlsx <br/>
 
 **Output files:** <br/>
-Path_setup/CA_exports.csv <br/>
-Hydro_setup/CA_dispatchable_hydro.csv <br/>
-Hydro_setup/CA_hydro_mins.csv <br/>
+Path_setup/PNW_exports.csv <br/>
+Path_setup/PNW_dispatchable_imports.csv <br/>
+Path_setup/PNW_imports.csv <br/>
+Path_setup/PNW_path_mins.csv <br/>
+Hydro_setup/PNW_dispatchable_hydro.csv <br/>
+Hydro_setup/PNW_hydro_mins.csv <br/>
