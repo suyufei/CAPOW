@@ -62,3 +62,26 @@ Hydro_setup/PNW_dispatchable_hydro.csv <br/>
 Hydro_setup/PNW_hydro_mins.csv <br/>
 
 <img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme7.png" alt="alt text" width="530" height="240">
+
+## CA_data_setup.py
+This file populates the data.dat file needed to run the CAISO UC/ED model. Note that the user can specify **hist=1** in order to assign historical monthly production values (**hist_year** = 2010 or 2011) to the two nuclear power plants in the CAISO footprint. If **hist=0**, these plants are assumed to be retired.
+
+**Input files required:** <br/>
+CA_data_file/generators.csv<br/>
+CA_data_file/paths.csv<br/>
+CA_data_file/calendar.xlsx<br/>
+CA_data_file/reserves.csv<br/>
+CA_data_file/wind_caps.xlsx<br/>
+CA_data_file/solar_caps.xlsx<br/>
+CA_data_file/must_run.xlsx<br/>
+../Stochastic_engine/Synthetic_demand_pathflows/Sim_hourly_load.xlsx<br/>
+../Stochastic_engine/Synthetic_wind_power/wind_power_sim.csv<br/>
+../Stochastic_engine/Synthetic_solar_power/solar_power_sim.xlsx<br/>
+../Stochastic_engine/Gas_prices/NG.xlsx<br/>
+Hydro_setup/CA_dispatchable_hydro.csv<br/>
+Hydro_setup/CA_hydro_mins.csv<br/>
+Path_setup/CA_dispatchable_imports.csv<br/>
+Path_setup/CA_exports.csv<br/>
+Path_setup/CA_path_mins.csv<br/>
+
+**Output files:** 
