@@ -111,3 +111,18 @@ Synthetic_solar_power/solar_power_sim.xlsx <br/>
 
 ## demand_pathflows.py
 
+**Input files required:**<br/>
+Synthetic_weather/synthetic_weather_data.csv<br/>
+PNW_hydro/FCRPS/Modeled_BPA_dams.csv<br/>
+Synthetic_wind_power/wind_power_sim.csv<br/>
+Synthetic_streamflows/synthetic_discharge_Hoover.csv<br/>
+Synthetic_demand_pathflows/hist_demanddata.xlsx<br/>
+Synthetic_demand_pathflows/Covariance_Calculation.csv<br/>
+Synthetic_demand_pathflows/NW_Path_data.xlsx<br/>
+Synthetic_demand_pathflows/OtherCA_Path_data.xlsx<br/>
+Synthetic_demand_pathflows/Path65_66_regression_data.xlsx<br/>
+Synthetic_demand_pathflows/46_daily.xlsx<br/>
+
+**Output files:** <br/>
+Synthetic_demand_pathflows/Load_Path_Sim.csv<br/>
+Synthetic_demand_pathflows/Sim_hourly_load.xlsx<br/>
