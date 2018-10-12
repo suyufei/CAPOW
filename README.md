@@ -15,7 +15,7 @@ The figures below illustrate the spatial extent and resolution of the CAPOW mode
 
 
 ## File structure, README files, and publications
-There are three main parts of the CAPOW model:
+There are three main parts of the CAPOW model. Each is associated with a separate sub-repository, and each is primary controlled by a single .py script.
 
 **1. Stochastic_engine** - (_**stochastic_engine.py**_) performs analysis of historical weather/hydrologic data, and uses this analysis to generate synthetic records of temperatures, wind speeds, and streamflows; then converts these synthetic records to associated values of relevant power system inputs.
 
