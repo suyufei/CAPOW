@@ -110,6 +110,7 @@ Synthetic_solar_power/solar_power_sim.xlsx <br/>
 <img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme4.png" alt="alt text" width="462" height="308">
 
 ## demand_pathflows.py
+This file simulates daily values of peak electricity demand and exchanges between the core UC/ED model and other zones in the WECC footprint using multivariate regression based largely on meteorological data. The correlated, whitened residuals of these regressions then form the basis of VAR models. Auto- and cross-correlated residuals are then added to regression predictions. Hourly electricity demand is calculated using profiles for each caledar day of the year. 
 
 **Input files required:**<br/>
 Synthetic_weather/synthetic_weather_data.csv<br/>
