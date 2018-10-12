@@ -53,12 +53,12 @@ CA_hydropower/sites.xlsx <br/>
 CA_hydropower/upper.xlsx <br/>
 CA_hydropower/calender.xlsx <br/>
 CA_hydropower/hist_reservoir_inflows.xlsx <br/>
-CA_hydropower/PGE_DE_V1
-CA_hydropower/SCE_DE_V1
-CA_hydropower/A1.0_FNF_Storage_Rule_Belden
-CA_hydropower/A1.0_FNF_Storage_Rule_Butt_Valley
-CA_hydropower/A1.0_FNF_Storage_Rule_Caribou_1
-CA_hydropower/A1.0_FNF_Storage_Rule_Caribou_2
+CA_hydropower/PGE_DE_V1 <br/>
+CA_hydropower/SCE_DE_V1 <br/>
+CA_hydropower/A1.0_FNF_Storage_Rule_Belden <br/>
+CA_hydropower/A1.0_FNF_Storage_Rule_Butt_Valley <br/>
+CA_hydropower/A1.0_FNF_Storage_Rule_Caribou_1 <br/>
+CA_hydropower/A1.0_FNF_Storage_Rule_Caribou_2 <br/>
 Synthetic_streamflows/synthetic_streamflows_CA.csv <br/>
 
 **Output files:** <br/>
