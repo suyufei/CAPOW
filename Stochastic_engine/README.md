@@ -16,10 +16,10 @@ Immediately below, stochastic_engine passes the user specified number of stochas
 This file takes its inputs from the statistical analysis of historical meteorological data (daily average profiles of wind and temperature, records of deviations (residuals) from those profiles, and a covariance matrix of "whitended" (de-seasoned) residuals across all meteorological fields and locations. Using these data, it fits a vector autoregressive (VAR) model to whitened meteorological residuals, re-seasons them and adds that data to the daily average profiles to arrive at synthetic daily weather data at each station represented.
 
 **Input files required:**
-Historical_weather_analysis/WIND_TEMP_res.csv
-Historical_weather_analysis/Covariance_Calculation.csv
-Historical_weather_analysis/WIND_TEMP_ave.csv
-Historical_weather_analysis/WIND_TEMP_std.csv
+Historical_weather_analysis/WIND_TEMP_res.csv <br/>
+Historical_weather_analysis/Covariance_Calculation.csv <br/>
+Historical_weather_analysis/WIND_TEMP_ave.csv <br/>
+Historical_weather_analysis/WIND_TEMP_std.csv <br/>
 
 **Output files:**
 Synthetic_Weather/synthetic_weather_data.csv
