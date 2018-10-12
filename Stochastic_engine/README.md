@@ -98,4 +98,15 @@ Synthetic_weather/synthetic_weather_data.csv<br/>
 **Output files:** <br/>
 Synthetic_wind_power/wind_power_sim.csv<br/>
 
+## synthetic_solar.py
+This file simulates aggregate hourly solar power production for the CAISO zones. Note that the user needs to specificy a level of installed wind power capcacity for the region (**CAISO_solar_cap = X**).
 
+**Input files required:**<br/>
+Synthetic_wind_power/renewables_2011_2017.xlsx<br/>
+Synthetic_wind_power/cap_by_month.xlsx<br/>
+Synthetic_wind_power/power_speed_daily.xlsx<br/>
+Synthetic_wind_power/calender.xlsx<br/>
+Synthetic_weather/synthetic_weather_data.csv<br/>
+
+**Output files:** <br/>
+Synthetic_solar_power/solar_power_sim.xlsx <br/>
