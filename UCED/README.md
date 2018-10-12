@@ -1,6 +1,6 @@
 
 ## Model Simulation
-The user specifies a number of days out of the randomly sampled synthetic year to simulated (**min = 2, max = 365**). Then the CAISO and PNW dispatch models are run in sequence.
+The user specifies a number of days out of the randomly sampled synthetic year to be simulated (**min = 2, max = 365**). Then the CAISO and PNW dispatch models are run in sequence.
 
 <img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme8.png" alt="alt text" width="500" height="400">
 
