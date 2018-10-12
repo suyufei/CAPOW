@@ -25,7 +25,7 @@ Historical_weather_analysis/WIND_TEMP_std.csv <br/>
 Synthetic_Weather/synthetic_weather_data.csv
 
 ## synthetic_streamflows.py
-This file
+This develops statistical relationships between total annual streamflow at each gauge site and total annual heating and cooling degree days. Whitened residuals from these regressions are used to calculate an associated covariance matrix. Total annual streamflows at each site are then simulated as the sum of predicted regression values and random samples from a multivariate normal defined by the historical covariance matrix. Daily flow fractions (the amount of streamflow experienced as a fraction of the annual total) are then conditionally re-sampled from the historical record using summer temperatures. 
 
 **Input files required:** <br/>
 Synthetic_streamflows/hist_temps_1953_2007.xlsx <br/>
@@ -43,3 +43,21 @@ Synthetic_streamflows/synthetic_discharge_Hoover.csv <br/>
 Synthetic_streamflows/synthetic_streamflows_CA.csv <br/>
 Synthetic_streamflows/synthetic_streamflows_Willamette.csv <br/>
 
+## CA_hydropower.py
+This file predicts aggregated daily hydropower production for two zones in the CAISO system (PG&E Valley and Southern California Edison). The primary inputs to this simulation are synthetic streamflows. No mass balance hydrologic models are available for most dams in these zones, so simple rule based prediction models were parameterized via a differential evolution algorithm. 
+
+**Input files required:** <br/>
+Synthetic_streamflows/hist_temps_1953_2007.xlsx <br/>
+Synthetic_streamflows/BPA_hist_streamflow.xlsx <br/>
+Synthetic_streamflows/Hoover_hist_streamflow.csv <br/>
+Synthetic_streamflows/CA_hist_streamflow.xlsx <br/>
+Synthetic_streamflows/Willamette_hist_streamflow.csv <br/>
+Synthetic_streamflows/city_weights.xlsx <br/>
+Synthetic_weather/synthetic_weather_data.csv <br/>
+
+**Output files:** <br/>
+Synthetic_streamflows/synthetic_streamflows_FCRPS.csv <br/>
+Synthetic_streamflows/synthetic_streamflows_TDA.csv <br/>
+Synthetic_streamflows/synthetic_discharge_Hoover.csv <br/>
+Synthetic_streamflows/synthetic_streamflows_CA.csv <br/>
+Synthetic_streamflows/synthetic_streamflows_Willamette.csv <br/>
