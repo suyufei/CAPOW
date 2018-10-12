@@ -64,7 +64,7 @@ Hydro_setup/PNW_hydro_mins.csv <br/>
 <img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme7.png" alt="alt text" width="530" height="240">
 
 ## CA_data_setup.py
-This file populates the data.dat file needed to run the CAISO UC/ED model. Note that the user can specify **hist=1** in order to assign historical monthly production values (**hist_year** = 2010 or 2011) to the two nuclear power plants in the CAISO footprint. If **hist=0**, these plants are assumed to be retired.
+This file populates the data.dat file needed to run the CAISO UC/ED model. Note that the user can specify **hist=1** in order to assign historical monthly production values (**hist_year = 2010 or 2011**) to the two nuclear power plants in the CAISO footprint. If **hist=0**, these plants are assumed to be retired.
 
 **Input files required:** <br/>
 CA_data_file/generators.csv<br/>
