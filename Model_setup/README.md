@@ -60,3 +60,5 @@ Path_setup/PNW_imports.csv <br/>
 Path_setup/PNW_path_mins.csv <br/>
 Hydro_setup/PNW_dispatchable_hydro.csv <br/>
 Hydro_setup/PNW_hydro_mins.csv <br/>
+
+<img src="https://github.com/romulus97/CAPOW/blob/master/Images/readme7.png" alt="alt text" width="530" height="270">
