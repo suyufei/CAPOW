@@ -45,8 +45,9 @@ sys.path.append(Streamflow_Path)
 import Run_Matlab_Script
 
 # Willamette US Army Corps of Engineers Hydropower model (mass balance)
-sys.path.append('PNW_hydro/Willamette/')
-import Willamette_launch
+#MOVED TO ---> UECD_setup.py
+#sys.path.append('PNW_hydro/Willamette/')
+#import Willamette_launch
 
 # Zonal calculation of daily hydro
 import PNW_hydro

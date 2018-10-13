@@ -60,6 +60,13 @@ CA_exchange_time_series.exchange(year)
 import PNW_exchange_time_series
 PNW_exchange_time_series.exchange(year)
 
+# Willamette US Army Corps of Engineers Hydropower model (mass balance)
+import sys
+sys.path.append('../Stochastic_engine/PNW_hydro/Willamette/')
+import Willamette_launch
+df_Willamette = pd.read_excel('../Stochastic_engine/PNW_hydro/Willamette/Output/Willamette_simulation_hydropower.xlsx')
+W=df_Willamette.values
+
 ############################################################################
 #                          UC/ED Data File Setup
 

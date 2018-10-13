@@ -20,8 +20,8 @@ FCRPS = df_FCRPS.values
 F = np.sum(FCRPS,axis=1)
 
 # Willamette
-df_Willamette = pd.read_excel('PNW_hydro/Willamette/Output/Willamette_simulation_hydropower.xlsx')
-W=df_Willamette.values
+#df_Willamette = pd.read_excel('PNW_hydro/Willamette/Output/Willamette_simulation_hydropower.xlsx')
+#W=df_Willamette.values
 
 # Missing Dams
 
