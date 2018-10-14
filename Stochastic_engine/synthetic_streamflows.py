@@ -393,7 +393,7 @@ output_WI=np.zeros((sim_years*365,num_Will))
 x_Hoover=Hoover_streamflow.loc[:,'Discharge'].values
 x_BPA=BPA_streamflow.loc[:,'1M':].values
 x_CA=CA_streamflow.loc[:,'ORO_fnf':].values
-x_WI=Willamette_streamflow.loc[:,'Albany':'LOP5E'].values
+x_WI=Willamette_streamflow.loc[:,'Albany':].values
 x=np.column_stack((x_BPA,x_Hoover,x_CA,x_WI))
 x=np.reshape(x,(hist_years,365,num_gages))
 
