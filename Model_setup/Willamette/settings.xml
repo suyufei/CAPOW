@@ -6,7 +6,7 @@
     <path
       path="Willamette/"/>
     <filenames
-    inflow_data_filename= "../Stochastic_engine/Synthetic_streamflows/Willamette_hist_streamflow.csv"
+    inflow_data_filename= "../Stochastic_engine/Synthetic_streamflows/synthetic_streamflows_Willamette.csv"
     hist_cp_filename= "Data/model_initialization/CP_hist_cyclo_discharge.xls"
     hist_res_filename= "Data/model_initialization/RES_hist_cyclo_rel_vol.xls"/>
   </data_inputs>
