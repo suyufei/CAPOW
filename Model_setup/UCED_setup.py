@@ -53,14 +53,12 @@ CA_exchange_time_series.exchange(year)
 ############################################################################
 #                          PNW TIME SERIES SETUP
 
-# Note: In future versions this can be set up differently to coordinate hourly
-# Export time series (PNW-->CAISO) with records of dispatched imports from the
-# CAISO market model. 
-
 # Willamette US Army Corps of Engineers Hydropower model (mass balance)
 import Willamette_launch
 df_Willamette = pd.read_excel('Willamette/Output/Willamette_simulation_hydropower.xlsx')
 W=df_Willamette.values
+
+# ADD MISSING DAMS (JOY)
 
 import PNW_exchange_time_series
 PNW_exchange_time_series.exchange(year)
