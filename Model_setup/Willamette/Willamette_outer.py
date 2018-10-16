@@ -403,7 +403,7 @@ Output_HP=Output_HP[:-1]
 
 
 #total HP as average hourly production 
-tot_HP=Output_HP.sum(axis=1)/24
+tot_HP=Output_HP.sum(axis=1)
 # Can cut off first and last 2 years
 #tot_HP=tot_HP[364:len(tot_HP)-365*2]
 writer = pd.ExcelWriter(os.path.join(str(path),output_filenames['@hydropower_filename']))
