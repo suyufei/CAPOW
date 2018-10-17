@@ -404,10 +404,13 @@ Output_HP=Output_HP[:-1]
 
 #total HP as average hourly production 
 tot_HP=Output_HP.sum(axis=1)
+pct_max = tot_HP/411 #pct of max capacity (Willamette aggregate)
+unmodeled = pct_max*1000.06 #max cap of 33 unmodeled dams
+total_hydro = tot_HP + unmodeled 
 # Can cut off first and last 2 years
 #tot_HP=tot_HP[364:len(tot_HP)-365*2]
 writer = pd.ExcelWriter(os.path.join(str(path),output_filenames['@hydropower_filename']))
-tot_HP.to_excel(writer,'total_HP_MW')
+total_hydro.to_excel(writer,'total_HP_MW')
 writer.save()
 
 #control points
