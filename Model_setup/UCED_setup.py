@@ -53,15 +53,24 @@ CA_exchange_time_series.exchange(year)
 ############################################################################
 #                          PNW TIME SERIES SETUP
 
+# Note: In future versions this can be set up differently to coordinate hourly
+# Export time series (PNW-->CAISO) with records of dispatched imports from the
+# CAISO market model. 
+
 # Willamette US Army Corps of Engineers Hydropower model (mass balance)
+df_streamflow = pd.read_csv('../Stochastic_engine/Synthetic_streamflows/synthetic_streamflows_Willamette.csv',header=0)
+df_streamflow = df_streamflow.loc[year*365:year*365+364,'Albany':]
+df_streamflow.to_csv('Willamette/one_year_Willamette.csv')
+
 import Willamette_launch
 df_Willamette = pd.read_excel('Willamette/Output/Willamette_simulation_hydropower.xlsx')
-W=df_Willamette.values
+W=df_Willamette
+W.columns = ['W']
 
-# ADD MISSING DAMS (JOY)
+# ACCOUNT FOR MISSING DAMS
 
 import PNW_exchange_time_series
-PNW_exchange_time_series.exchange(year)
+PNW_exchange_time_series.exchange(year,W)
 
 ############################################################################
 #                          UC/ED Data File Setup
@@ -70,7 +79,7 @@ PNW_exchange_time_series.exchange(year)
 # hist = 1 if looking at historical nuclear power production; facilitates use of
 # monthly nuclear power generation data from EIA. Note that if hist = 0 
 # the model assumes that nuclear power plants in California have been retired.
-hist = 1
+hist = 0
 hist_year = 2011
 
 import CA_data_setup

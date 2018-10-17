@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def exchange(year):
+def exchange(year,W):
 
     df_data = pd.read_csv('../Stochastic_engine/Synthetic_demand_pathflows/Load_Path_Sim.csv',header=0)
     c = ['Path3_sim','Path8_sim','Path14_sim','Path65_sim','Path66_sim']
@@ -117,6 +117,9 @@ def exchange(year):
     df_mins = pd.read_excel('Hydro_setup/Minimum_hydro_profiles.xlsx',header=0)
     
     for i in range(0,len(hydro)):
+        hydro.loc[i,'PNW'] = hydro.loc[i,'PNW'] + W.loc[i,'W']
+    
+    for i in range(0,len(hydro)):
     
         if df_mins.loc[i,'PNW']*24 >= hydro.loc[i,'PNW']:
             df_mins.loc[i,'PNW'] = hydro.loc[i,'PNW']/24
@@ -135,6 +138,9 @@ def exchange(year):
     hydro = df_data.loc[year*365:year*365+364,'PNW']
     hydro = hydro.reset_index()
     
+    for i in range(0,len(hydro)):
+        hydro.loc[i,'PNW'] = hydro.loc[i,'PNW'] + W.loc[i,'W']
+        
     for i in range(0,365):
             
         hourly[i*24:i*24+24] = np.min((df_mins.loc[i,'PNW'],hydro.loc[i,'PNW']))
