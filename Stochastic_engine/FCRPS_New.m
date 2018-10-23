@@ -3082,6 +3082,12 @@ csvwrite('PNW_hydro/FCRPS/spill.csv',spill);
 csvwrite('PNW_hydro/FCRPS/generation.csv',generation);
 csvwrite('PNW_hydro/FCRPS/heads.csv',heads);
 
+
+generation(1,:)=generation(3,:);
+generation(2,:)=generation(3,:);
+
+total=sum(generation');
+total=total';
 % nature_spill(:,1)=spill(:,10);
 % nature_spill(:,2)=spill(:,11);
 % nature_spill(:,3)=spill(:,13);
@@ -3109,8 +3115,65 @@ Modeled(:,11)=generation(:,43);
 Modeled(:,12)=generation(:,16);
 Modeled(:,13)=generation(:,3);
 
+
+
 Modeled(1,:)=Modeled(3,:);
 Modeled(2,:)=Modeled(3,:);
+
+
+
+Unmodeled(:,1)=generation(:,10)*0.0038;
+Unmodeled(:,2)=generation(:,24)*1.77;
+Unmodeled(:,3)=generation(:,21)*0.017;
+Unmodeled(:,4)=generation(:,40)*0.0621;
+Unmodeled(:,5)=total*0.0015;
+Unmodeled(:,6)=generation(:,42)*0.019;
+Unmodeled(:,7)=generation(:,40)*0.024;
+Unmodeled(:,8)=generation(:,40)*0.012;
+Unmodeled(:,9)=generation(:,33)*0.012;
+Unmodeled(:,10)=generation(:,34)*0.0126;
+Unmodeled(:,11)=generation(:,40)*0.0089;
+Unmodeled(:,12)=total*0.00022;
+Unmodeled(:,13)=total*0.00022;
+Unmodeled(:,14)=generation(:,20)*0.0196;
+Unmodeled(:,15)=generation(:,40)*0.0036;
+Unmodeled(:,16)=generation(:,20)*0.0169;
+Unmodeled(:,17)=generation(:,42)*0.0018;
+Unmodeled(:,18)=generation(:,22)*0.0012;
+Unmodeled(:,19)=generation(:,39)*0.00159;
+Unmodeled(:,20)=total*0.0000139;
+Unmodeled(:,21)=generation(:,40)*0.000426;
+Unmodeled(:,22)=total*0.000011;
+Unmodeled(:,23)=total*0.000083;
+Unmodeled(:,24)=generation(:,32)*0.015;
+Unmodeled(:,25)=generation(:,32)*0.0106;
+Unmodeled(:,26)=generation(:,32)*0.497;
+Unmodeled(:,27)=generation(:,32)*0.216;
+Unmodeled(:,28)=generation(:,32)*0.2148;
+Unmodeled(:,29)=generation(:,43)*0.034;
+Unmodeled(:,30)=generation(:,43)*0.0308;
+Unmodeled(:,31)=generation(:,43)*0.0299;
+Unmodeled(:,32)=generation(:,32)*0.179;
+Unmodeled(:,33)=generation(:,32)*0.168;
+Unmodeled(:,34)=generation(:,40)*0.036;
+Unmodeled(:,35)=generation(:,32)*0.019;
+Unmodeled(:,36)=generation(:,32)*0.0024;
+Unmodeled(:,37)=generation(:,32)*0.0016;
+Unmodeled(:,38)=generation(:,32)*0.72;
+Unmodeled(:,39)=generation(:,32)*0.33;
+Unmodeled(:,40)=generation(:,32)*0.266;
+Unmodeled(:,41)=generation(:,34)*0.0176;
+Unmodeled(:,42)=generation(:,38)*0.0065;
+Unmodeled(:,43)=generation(:,40)*0.266;
+Unmodeled(:,44)=generation(:,40)*0.144;
+Unmodeled(:,45)=generation(:,10)*0.13;
+Unmodeled(:,46)=generation(:,40)*0.057;
+Unmodeled(:,47)=generation(:,40)*0.044;
+
+%Modeled 14 is all of the unmodeled dams
+total_unmodeled=sum(Unmodeled');
+Modeled(:,14)=total_unmodeled';
+
 Modeled=Modeled(123:length(Modeled)-243,:);
 csvwrite('PNW_hydro/FCRPS/Modeled_BPA_dams.csv',Modeled*(0.93340921))
 
