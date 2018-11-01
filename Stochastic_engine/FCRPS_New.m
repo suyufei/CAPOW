@@ -3175,7 +3175,7 @@ total_unmodeled=sum(Unmodeled');
 Modeled(:,14)=total_unmodeled';
 
 Modeled=Modeled(123:length(Modeled)-243,:);
-csvwrite('PNW_hydro/FCRPS/Modeled_BPA_dams.csv',Modeled*(0.93340921))
+csvwrite('PNW_hydro/FCRPS/Modeled_BPA_dams.csv',Modeled)
 
 % GG=generation(28115:28835,8);
 % %nature spill
